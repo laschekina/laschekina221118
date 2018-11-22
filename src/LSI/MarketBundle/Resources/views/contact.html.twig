@@ -1,0 +1,98 @@
+{% extends '::layout.html.twig' %}
+
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('bundles/lsimarket/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/lsimarket/css/iconic.cs') }}">
+{% endblock stylesheets %}
+
+{%  block body %}
+
+<!-- Header  -->
+
+<!-- Page layout -->
+<section class="content-section">
+	<div class="container">
+		<div class="title-row heading">
+			 
+					<div class="container">
+						
+							<!-- Contact To Agent -->    
+							<div class="col-md-12" id="titre_head">
+								<p><h2 id="titre 1">CONTACTER CIVILINC </h2></p><br><br>
+								<p>Nous envoyer un message. Un conseillé vous recontactera.</p><br>
+							</div>
+   
+                                                        
+							<div class="col-md-4">
+								<div class="content-box-2">
+									<figure class="image-box">
+										<img src="{{ asset('bundles/lsimarket/images/habilitation/9675018730_f3ab9ab065_b.jpg') }}" height="683" width="1024" alt="">
+									</figure>
+									<div class="contents">
+										<p><h3 class="heading-style-1">CIVILINC</h3></p>
+										Adresse : <br>
+										Code Postal : <br>
+										Ville : <br>
+										Téléphone : <br>
+										Email : <br>
+           
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="content-box-2 agents-contact">
+									<div class="heading">
+										<h5>Nous envoyer un message</h5>
+									</div>
+									<form class="form-content pad-top-small" data-parsley-validate>
+										<div class="row">
+											<div class="col-md-6 form-group-1">
+												<input type="text" class="form-control input-lg" placeholder="Nom" required data-parsley-required-message="Please insert your name" name="name">
+											</div>
+											<div class="col-md-6 form-group-1">
+												<input type="text" class="form-control input-lg" placeholder="E-mail " required data-parsley-required-message="Please insert your Email" name="email">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 form-group-1">
+												<input type="text" class="form-control input-lg" placeholder="Contact" required data-parsley-required-message="Please insert your contact no" data-parsley-min="10" name="contact">
+											</div>
+											<div class="col-md-6 form-group-1">
+												<input type="text" class="form-control input-lg" placeholder="Votre ville" required name="location">
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group-1 col-md-12">
+												<textarea class="form-control" placeholder="Entrer votre question" rows="3"  required data-parsley-minlength="20" data-parsley-minlength-message = "Come on! You need to enter at least a 20 character comment.."  data-parsley-validation-threshold="10" data-parsley-maxlength="100" name="message"></textarea>
+											</div>
+										</div>
+										<div class="row pad-top-small">
+											<div class="col-md-12">
+												<button class="btn btn-primary btn-large pull-right">Soumetre</button>
+											</div>
+											<div class="text-success col-xs-12 hidden form-messges text-center">
+												<p>We will responce as soon as possible.</p>
+											</div>
+										</div>
+									</form>
+									<div class="info-box-1">
+										<h5><span>OU APPELEZ NOUS DIRECTEMENT</span></h5>
+										<p><span class="large-text-1"><span class="iconic-phone-square"></span>900 123 3456 </span>&nbsp;</p>
+									</div>
+								</div>
+						 
+						<!-- Contact To Agent // -->
+					</div>
+				  </div>
+    
+                           
+		</div>		
+	</div>
+</section>		
+<!-- Page layout // -->
+
+{%  endblock body %}
+
